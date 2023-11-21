@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
   res.send("Hello, Express!");
 });
 
-const server = app.listen(port, (req, res) => {
+const server = app.listen(port || 8080 , (req, res) => {
   console.log(`Server started running on port ${port}`);
 });
 
