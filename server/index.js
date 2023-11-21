@@ -41,7 +41,7 @@ const server = app.listen(port, (req, res) => {
 
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://ivrchat.vercel.app",
     credentials: true,
   },
 });
